@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">My Website</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+                    <div class="container">
+                       <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            </ul>  
+                                      
+                    </div>
+            </nav>
+            
         </div>
-      </nav>
-    
-      <!-- Main Content -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>Welcome to My Website</h1>
-          </div>
         </div>
-      </div>
-    
-      <!-- Include Bootstrap JS -->
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  
+    </header>
+    <section>
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-12 col-sm-4 col-md-3"> 
+                    <ul>
+                        <li>Apples</li>
+                        <li>Bananas</li>
+                        <li>Carrots</li>
+                        <li>Donuts</li>
+                        <li>Eggs</li>
+                        <li>French fries</li>
+                      </ul>
+                </div>
+                <div class="col col-sm col-md"> abc</div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12 col-sm-4 col-md-3"> ... </div>
+                <div class="col col-sm col-md"> ... </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12 col-sm-4 col-md-3"> ... </div>
+                <div class="col col-sm col-md"> ... </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-4 col-sm-2"> ... </div>
+
+            <div class="col-7 col-sm-5"> ... </div>
+
+            <div class="col-12 col-sm-4"> ... </div>
+
+            <div class="col-auto"> ... </div>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
