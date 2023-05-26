@@ -121,7 +121,14 @@
                                 <img src="img\Manchester_United_FC_crest.svg.png" width="25%" alt="" style="margin-left: 38%;">
                             </div>
                             <div class="carousel-item">
-                                <img src="img\6329a1fe4f9291001883cafe (1).jpg" width="25%"  style="margin-left: 38%;"alt="">
+                                <img src="img\6329a1fe4f9291001883cafe (1).jpg" width="25%" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Cristiano Ronaldo
+                                        <span class="badge badge-danger">HOT +8</span>
+                                        <span class="badge badge-pill badge-default"></span>
+                                    </h2>
+                                    SIUUUUUUUUUUUUUUUUU
+                                </div>
                             </div>
                         </div>
                         <ol class="carousel-indicators">
@@ -135,7 +142,15 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
-                        
+                        <div class="btn-group" id="carouselButton">
+                            <button class="btn btn-danger btn-sm" id="carousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carousel-play">
+                                <span class="fa fa-play"></span>
+                            </button>
+                       </div>
+        
                     </div>
                 </div>
             </div>
@@ -214,6 +229,18 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+</script>
+
 
 
 </body>
